@@ -10,6 +10,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <div class="container">
+      <div class="col-12">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
