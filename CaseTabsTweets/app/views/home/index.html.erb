@@ -7,10 +7,10 @@
   <div class="col-4">
     <div class="card">
       <div class="card-header">
-        <%="Tweet: #{i} date: #{tweet.created_at.to_date}"%>
+        <%="Tweet: #{i} date: #{tweet[:date]}"%>
       </div>
       <div class="card-body">
-        <p class="card-text"><%=tweet[:text]%></p>
+        <p class="card-text"><%=raw tweet[:text]%></p>
       </div>
     </div>
   </div>
